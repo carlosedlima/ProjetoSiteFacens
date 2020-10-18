@@ -10,7 +10,7 @@
             <!-- Header -->
             <header id="header" class="">
                 <?php
-                    include_once($arquivo."elements/menu.html");
+                    include_once($arquivo."elements/menu.php");
                 ?>
 
                 <!-- Page Wrapper -->

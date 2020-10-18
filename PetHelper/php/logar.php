@@ -9,16 +9,24 @@
     $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
 	
 	if((!empty($email)) AND (!empty($senha)) AND (isset($_POST['humano']))){
-		$result_clinica = "SELECT cli_id, cli_nome, cli_senha FROM clinicas WHERE cli_email='$email' LIMIT 1";
+		$result_clinica = "SELECT * FROM clinicas WHERE cli_email='$email' LIMIT 1";
 		$resultado_clinica = mysqli_query($conn, $result_clinica);
         $row_clinica = mysqli_fetch_assoc($resultado_clinica);
         
 		if($resultado_clinica && (isset($row_clinica['cli_id']))){
 			if(password_verify($senha, $row_clinica['cli_senha'])){
-				$_SESSION['id'] = $row_usuario['cli_id'];
-				$_SESSION['nome'] = $row_usuario['cli_nome'];
-				$_SESSION['email'] = $row_usuario['cli_email'];
-				header("Location: logado.php");
+				$_SESSION['id'] = $row_clinica['cli_id'];
+				$_SESSION['nome'] = $row_clinica['cli_nome'];
+				$_SESSION['email'] = $row_clinica['cli_email'];
+				$_SESSION['telefone'] = $row_clinica['cli_telefone'];
+				$_SESSION['CNPJ'] = $row_clinica['cli_CNPJ'];
+				$_SESSION['descricao'] = $row_clinica['cli_descricao'];
+				$_SESSION['animaisD'] = $row_clinica['cli_animais_domesticos'];
+				$_SESSION['animaisS'] = $row_clinica['cli_animais_silvestres'];
+				$_SESSION['endereco'] = $row_clinica['cli_rua']." ".$row_clinica['cli_numero'].", - ".$row_clinica['cli_bairro'].". ".$row_clinica['cli_cidade']." - ".$row_clinica['cli_estado'];
+				$_SESSION['latitude'] = $row_clinica['cli_lat'];
+				$_SESSION['longitude'] = $row_clinica['cli_long'];
+                header("Location: perfil.php");
 			}else{
                 $erro = true;
 				$msg = "Login ou senha incorreto!";
@@ -44,7 +52,7 @@
             <!-- Header -->
             <header id="header" class="">
             <?php
-                include_once($arquivo."elements/menu.html");
+                include_once($arquivo."elements/menu.php");
             ?>
 
             <!-- Page Wrapper -->

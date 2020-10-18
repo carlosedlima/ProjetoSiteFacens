@@ -51,7 +51,7 @@
 	$resultado_cadastrado = mysqli_query($conn, $result_cadastrado);
 	if(($resultado_cadastrado) AND ($resultado_cadastrado->num_rows != 0)){
 		$erro = true;
-		$msg = "Este CNPJ já está cadastrado";
+		$msg = "Este email já está cadastrado";
 	}
 	
 	if($erro == false){
@@ -90,7 +90,7 @@
             <!-- Header -->
             <header id="header" class="">
                 <?php
-                    include_once($arquivo."elements/menu.html");
+                    include_once($arquivo."elements/menu.php");
                 ?>
 
                 <!-- Page Wrapper -->

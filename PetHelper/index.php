@@ -14,7 +14,7 @@
 				<!-- Header -->
 				<header id="header" class="alt">
 					<?php
-						include_once("elements/menu.html");
+						include_once("elements/menu.php");
 					?>
 
 					<!-- Banner -->
