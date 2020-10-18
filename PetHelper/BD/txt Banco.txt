@@ -1,0 +1,38 @@
+create DATABASE pethelper
+
+//alterar tabela de clinica para colocar imagem tbm
+
+CREATE TABLE clinicas (
+	cli_id int PRIMARY KEY AUTO_INCREMENT,
+    cli_nome varchar (255) NOT null,
+    cli_email varchar (255) NOT null,
+    cli_telefone  varchar(17) NOT null,
+    cli_CNPJ varchar(15) unique NOT null,
+    cli_descricao text NOT null,
+    cli_animais_domesticos boolean NOT null,
+    cli_animais_silvestres boolean NOT null,
+    cli_senha varchar(255) NOT null,
+    cli_estado char(2) NOT null,
+    cli_cidade varchar(255) NOT null,
+    cli_bairro varchar(255) NOT null,
+    cli_rua varchar (255) NOT null,
+    cli_numero int NOT null,
+    cli_lat decimal(10,6) NOT null,
+    cli_long decimal (11,6) NOT null
+);
+
+
+CREATE TABLE pendentes (
+	pen_id int PRIMARY KEY AUTO_INCREMENT,
+    pen_nome varchar (255) NOT null,
+    pen_email varchar (255) NOT null,
+    pen_telefone  varchar(17) NOT null,
+    pen_CNPJ varchar(15) unique NOT null,
+    pen_descricao text,
+    pen_animais_domesticos boolean NOT null,
+    pen_animais_silvestres boolean NOT null,
+    pen_senha varchar(255) NOT null
+);
+
+
+INSERT into clinicas values (1, "Admin", "admin@email.com", "+55(11)97070-7070", "XXX.XXX/0002-XX", "Uma descrição mt boa aqui", 1, 1, "$2y$10$nUIoZgCJ.i/DDdU.ILRJ4uLR3BadpjTJAZ/aEmlHaktCJwdu.OLWS", "SP", "Sorocaba", "Bairro", "Rua", 0000, 00.000000, 000.000000);
