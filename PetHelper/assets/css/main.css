@@ -3997,3 +3997,23 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	/* Extra */
+	@media (max-width: 767px) {                  
+		.content-to-hide {
+		   display: none;
+		}
+
+		.content-to-show {
+			display: block;
+		 }
+	 }
+
+	 @media (min-width: 768px) {                  
+		.content-to-hideL {
+		   display: none;
+		}
+		.content-to-showL {
+			display: block;
+		 }
+	 }

@@ -2,7 +2,7 @@
 <html>
     <?php
         $root = $_SERVER['DOCUMENT_ROOT'];
-        $arquivo = $root."/PetHelper/";
+        $arquivo = $root."/ProjetoSiteFacens/PetHelper/";
         include_once($arquivo."elements/head.html");
 	?>
 	<body class="landing is-preload">
@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="col-12">
                                     <select name="animais" id="demo-category" required>
-                                        <option value="">Tipos de Animal</option>
+                                        <option value="">Tipos de Animais</option>
                                         <option value="0">Animais Domésticos</option>
                                         <option value="1">Animais Silvestres</option>
                                         <option value="2">Animais Domésticos e Silvestres</option>

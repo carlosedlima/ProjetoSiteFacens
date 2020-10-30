@@ -11,7 +11,7 @@
 		{
 			
 			$root = $_SERVER['DOCUMENT_ROOT'];
-			$arquivo = ($root . '/PetHelper/php/classes/config.txt');
+			$arquivo = ($root . '/ProjetoSiteFacens/PetHelper/php/classes/config.txt');
 			$linhas = file($arquivo);
 			
 			
