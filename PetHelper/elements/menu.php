@@ -14,7 +14,7 @@
                             }else{
                                  
                                echo "<li><a href='php/perfil.php'>Perfil da Clínica</a></li>
-                                     <li><a href='php/buscar.php'>Pesquisar</a></li>";
+                                     <li><a href='php/buscar.php'>Buscar</a></li>";
                                      
                                 if($_SESSION['id'] == 157558){
                                 echo "<li><a href='php/adms/pendentes.php'>Pendentes</a></li>";

@@ -33,6 +33,7 @@
                     <section id="two" class="wrapper alt style2">
 						<section class="spotlight" style="background-color: #ffffff; align-items: start;">
 							<div class="image"><img src="images/vet.jpg"/></div><div class="content">
+                            <i class="fas fa-pen image right" style="cursor: pointer;"></i>
                             <?php   echo   "<h2>Nome: ". $_SESSION['nome']. "</h2>
                                     <p>Email: ".$_SESSION['email']."</p>
                                     <p>Telefone: ".$_SESSION['telefone']."</p>

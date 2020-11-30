@@ -69,8 +69,7 @@
 						)";
 		$resultado_pendente = mysqli_query($conn, $result_pendente);
 		if(mysqli_insert_id($conn)){
-            //header("Location: login.php");
-            //Enviar para uma tela de confimação de cadastro
+            header("Location: login.php");
 		}else{
             $erro = true;
 			$msg = "Erro ao cadastrar o usuário";

@@ -41,6 +41,10 @@
                             <div class="">
                                 <form id="" method="GET" action="">
                                     <br>
+                                    <label>Emergencial:</label>
+                                    <input type="checkbox" id="emergencia" name="emergencia">
+                                    <label for="emergencia">Atendimento Emergencial</label><br>
+                                    <br>
                                     <label>Especialidades:</label>
                                     <input type="checkbox" id="cachorro" name="cachorro" checked="">
                                     <label for="cachorro">Cachorro</label><br>
@@ -71,44 +75,50 @@
                         <div class="flex-child" style="flex: 2;">
                         
                         <div>
-                                <h4>Nome da Clínica</h4>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                
                                 <span class="image left"><img src="images/pic01.jpg"/></span>
-                                <p style="text-align: justify;">Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam.</p>   
+                                <p style="text-align: justify;"><h4>Centro Veterinário MEDVET</h4>
+                                    Atendimento de animais domésticos e silvestres.<br>
+                                    Rua Professor José Munhoz, 617 - Pte. Grande, Guarulhos - SP<br>
+                                    Telefone: (11) 97070-7070<br><br>
                                 <div class="content-to-hide">
-                                    <center><i class="button primary fas fa-greater-than fit small" onclick="buscar()"></i></center>
+                                    <center><button class="button primary fit small" onclick="buscar()">Saiba Mais</i></center>
                                 </div>
                                 <div class="content-to-hideL">
-                                    <center><i class="button primary fas fa-greater-than fit small" onclick="buscar()">></i></center>
+                                    <center><button class="button primary fit small" onclick="buscar()">Saiba Mais</i></center>
                                 </div>
                                 
                             </div>
                             <hr>
                             <div>
-                                <h4>Nome da Clínica 2</h4>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
                                 <span class="image left"><img src="images/pic01.jpg"/></span>
-                                <p style="text-align: justify;">Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam.</p>   
+                                <p style="text-align: justify;"><h4>Clínica Veterinária VetMed</h4>
+                                    Atendimento de animais domésticos e silvestres.<br>
+                                    Rua Professor Munhoz, 717 - Indaiatuba - SP<br>
+                                    Telefone: (11) 97070-7070<br><br>  
                                 <div class="content-to-hide">
-                                    <center><i class="button primary fas fa-greater-than fit small" onclick="buscar()"></i></center>
+                                    <center><button class="button primary fit small" onclick="buscar()">Saiba Mais</i></center>
                                 </div>
                                 <div class="content-to-hideL">
-                                    <center><i class="button primary fas fa-greater-than fit small" onclick="buscar()">></i></center>
+                                    <center><button class="button primary fit small" onclick="buscar()">Saiba Mais</i></center>
                                 </div>
                                 
                             </div>  
                         </div>
 
                         <div class="flex-child content-to-hide" style="flex: 1.5;margin-left: 5%;padding-right: 1%;">
-                            <div id="pesquisa" style="display: none;">
+                            <div id="pesquisa" style="display: ;">
                                 <i class="far fa-times-circle image right" onclick="sumir()" style="cursor: pointer;"></i>
                                 <br>
                                 <img src="images/pic01.jpg" class="image left" style="max-width: 50%; height: auto;"/>
-                                <p style="text-align: justify;">Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam.</p>   
-                                <p>Detalhes</p>
-                                <p>Detalhes</p>
-                                <p>Detalhes</p>
-                                <p>Detalhes</p>
+                                <p style="text-align: justify;">
+                                <p>No centro Veterinário MEDVET você encontrará o melhor atendimento para seu animal de estimação.</p>
+                                    Atendimento de Animais Domésticos: Não<br>
+                                    Atendimento de Animais Silvestres: Não<br>
+                                    Endereço: Rua 0, - Bairro. Sorocaba - SP<br>
+                                    Telefone: +55(11)97070-7070<br>
+                                    Email: admin@email.com<br>   
+                                </p>
                             </div>
                         </div>
                     
