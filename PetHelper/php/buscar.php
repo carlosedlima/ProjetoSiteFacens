@@ -76,51 +76,65 @@
                         
                         <div>
                                 
-                                <span class="image left"><img src="images/pic01.jpg"/></span>
+                                <span class="image left"><img src="images/medvet.jpg"/></span>
                                 <p style="text-align: justify;"><h4>Centro Veterinário MEDVET</h4>
                                     Atendimento de animais domésticos e silvestres.<br>
                                     Rua Professor José Munhoz, 617 - Pte. Grande, Guarulhos - SP<br>
-                                    Telefone: (11) 97070-7070<br><br>
+                                    Telefone: (11) 4020-2020<br><br>
                                 <div class="content-to-hide">
-                                    <center><button class="button primary fit small" onclick="buscar()">Saiba Mais</i></center>
+                                    <center><button class="button primary fit small" onclick="sumir2(), buscar()">Saiba Mais</i></center>
                                 </div>
                                 <div class="content-to-hideL">
-                                    <center><button class="button primary fit small" onclick="buscar()">Saiba Mais</i></center>
+                                    <center><button class="button primary fit small" onclick="sumir2(), buscar()">Saiba Mais</i></center>
                                 </div>
                                 
                             </div>
                             <hr>
                             <div>
-                                <span class="image left"><img src="images/pic01.jpg"/></span>
-                                <p style="text-align: justify;"><h4>Clínica Veterinária VetMed</h4>
+                                <span class="image left"><img src="images/univet.jpg"/></span>
+                                <p style="text-align: justify;"><h4>Clínica Veterinária Univet</h4>
                                     Atendimento de animais domésticos e silvestres.<br>
                                     Rua Professor Munhoz, 717 - Indaiatuba - SP<br>
-                                    Telefone: (11) 97070-7070<br><br>  
+                                    Telefone: (11) 4020-7070<br><br>  
                                 <div class="content-to-hide">
-                                    <center><button class="button primary fit small" onclick="buscar()">Saiba Mais</i></center>
+                                    <center><button class="button primary fit small" onclick="sumir(), buscar2()">Saiba Mais</i></center>
                                 </div>
                                 <div class="content-to-hideL">
-                                    <center><button class="button primary fit small" onclick="buscar()">Saiba Mais</i></center>
+                                    <center><button class="button primary fit small" onclick="sumir(), buscar2()">Saiba Mais</i></center>
                                 </div>
                                 
                             </div>  
                         </div>
 
                         <div class="flex-child content-to-hide" style="flex: 1.5;margin-left: 5%;padding-right: 1%;">
-                            <div id="pesquisa" style="display: ;">
+                            <div id="pesquisa" style="display: none;">
                                 <i class="far fa-times-circle image right" onclick="sumir()" style="cursor: pointer;"></i>
                                 <br>
-                                <img src="images/pic01.jpg" class="image left" style="max-width: 50%; height: auto;"/>
+                                <img src="images/medvet.jpg" class="image left" style="max-width: 50%; height: auto;"/>
                                 <p style="text-align: justify;">
                                 <p>No centro Veterinário MEDVET você encontrará o melhor atendimento para seu animal de estimação.</p>
                                     Atendimento de Animais Domésticos: Não<br>
                                     Atendimento de Animais Silvestres: Não<br>
                                     Endereço: Rua 0, - Bairro. Sorocaba - SP<br>
-                                    Telefone: +55(11)97070-7070<br>
-                                    Email: admin@email.com<br>   
+                                    Telefone: +55(11)4020-2020<br>
+                                    Email: medvet@email.com<br>   
+                                </p>
+                            </div>
+                            <div id="pesquisa2" style="display: none;">
+                                <i class="far fa-times-circle image right" onclick="sumir2()" style="cursor: pointer;"></i>
+                                <br>
+                                <img src="images/univet.jpg" class="image left" style="max-width: 50%; height: auto;"/>
+                                <p style="text-align: justify;">
+                                <p>A UniVET é um centro veterinário 24 horas, com uma equipe de Veterinários altamente qualificada e colaboradores treinados na parte técnica e de atendimento ao público para melhor serví-los. Equipamentos de alta tecnologia, um Centro de Terapia Intensiva com suporte completo. Tudo o que seu pet precisa num único lugar. </p>
+                                    Atendimento de Animais Domésticos: Não<br>
+                                    Atendimento de Animais Silvestres: Não<br>
+                                    Endereço: Rua Professor Munhoz, 717 - Indaiatuba - SP<br>
+                                    Telefone: +55(11)4020-7070<br>
+                                    Email: univet@email.com<br>   
                                 </p>
                             </div>
                         </div>
+
                     
                     </div>
                 </section>

@@ -9,8 +9,18 @@
 		mostrar.style.display = "block";
 	}
 
+	function buscar2(){
+		var mostrar = document.getElementById("pesquisa2");
+		mostrar.style.display = "block";
+	}
+
 	function sumir(){
 		var mostrar = document.getElementById("pesquisa");
+		mostrar.style.display = "none";
+	}
+
+	function sumir2(){
+		var mostrar = document.getElementById("pesquisa2");
 		mostrar.style.display = "none";
 	}
 
